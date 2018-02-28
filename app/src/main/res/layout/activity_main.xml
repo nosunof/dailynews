@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context="com.dailynews.android.MainActivity">
+    tools:context="com.dailynews.android.activity.MainActivity">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/refresh_layout"
@@ -28,41 +28,17 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
             <FrameLayout
-                android:id="@+id/content_frag"
+                android:id="@+id/content_fl"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </LinearLayout>
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <LinearLayout
-        android:id="@+id/nav_themeview"
-        android:layout_width="match_parent"
+    <fragment
+        android:name="com.dailynews.android.fragment.MenuFragment"
+        android:id="@+id/menu_fragment"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-
-        <include layout="@layout/nav_head_layout"/>
-
-        <Button
-            android:id="@+id/nav_homebutton"
-            android:drawableLeft="@drawable/home"
-            android:drawablePadding="20dp"
-            android:gravity="left|center_vertical"
-            android:textSize="20sp"
-            android:textColor="@android:color/holo_blue_light"
-            android:text="首页"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"/>
-
-        <ListView
-            android:background="@android:color/white"
-            android:id="@+id/nav_theme_listview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:choiceMode="singleChoice"
-            android:divider="@android:color/transparent"
-            android:scrollbars="none"
-            />
-    </LinearLayout>
+        android:layout_gravity="left"/>
 
 </android.support.v4.widget.DrawerLayout>

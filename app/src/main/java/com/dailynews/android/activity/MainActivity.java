@@ -1,8 +1,10 @@
-package com.dailynews.android;
+package com.dailynews.android.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.dailynews.android.R;
 
 public class MainActivity extends AppCompatActivity {
 

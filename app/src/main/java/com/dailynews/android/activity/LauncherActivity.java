@@ -1,4 +1,4 @@
-package com.dailynews.android;
+package com.dailynews.android.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -11,6 +11,7 @@ import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.dailynews.android.R;
 import com.dailynews.android.view.LauncherView;
 
 import java.util.Random;

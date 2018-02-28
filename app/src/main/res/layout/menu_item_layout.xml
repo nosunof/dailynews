@@ -10,12 +10,11 @@
               android:layout_height="?attr/actionBarSize">
 
     <TextView
-        android:id="@+id/nav_theme_name"
+        android:id="@+id/theme_name"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:text="日常心理学"
         android:layout_height="wrap_content"/>
 
     <ImageView
@@ -28,5 +27,5 @@
         android:layout_marginLeft="45dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    
+
 </LinearLayout>
